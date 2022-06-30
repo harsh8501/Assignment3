@@ -1,0 +1,10 @@
+# Ignore all build artefacts across products
+**/target/
+
+# Remove Cargo.lock from gitignore if creating an executable, leave it from libraries 
+# More information here https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html
+Cargo.lock
+
+#Ignore Files across products
+# Outputs of each app go in a folder called Files. This makes it easy to write build scripts that refer to a Files location
+**/Files/
